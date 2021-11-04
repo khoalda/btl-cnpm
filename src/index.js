@@ -1,15 +1,21 @@
-const path = require("path");
-const express = require("express");
-const morgan = require("morgan");
-const handlebars = require("express-handlebars");
+const path = require('path');
+const express = require('express');
+const morgan = require('morgan');
+const handlebars = require('express-handlebars');
 const app = express();
 const port = 3000;
-const route = require("./routes");
+const route = require('./routes');
 
-app.use(express.static(path.join(__dirname, "public")));
+const db = require('./config/db')
+
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 //HTTP logger
 app.use(morgan("combined"));
+
+db.connect() // jquery, ajax post form handler
+
 
 //template engine
 app.engine('hbs', handlebars({
