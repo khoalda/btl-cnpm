@@ -1,1 +1,113 @@
-<h1>Menu page</h1>
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(img/homepage.jpg);">
+        <div class="container">
+            <div class="food-menu">
+
+                <!--Modal Divs-->
+                <div id="modalDiv">
+                    {{#each foods}}
+                        <div id="{{this.code}}" class="overlay">
+                        <div class="popup">
+                            <a class="close" href="#modal-stop">&times;</a>
+                            <div class="modal-img" id="food1">
+                                <div class="modal-img-holder bg-img"
+                                    style="background-image: url({{this.image}});"></div>
+                            </div>
+                            <div class="modal-item-info">
+                                <div id="modal-info">
+                                    <h3>
+                                        {{this.name}}
+                                    </h3>
+                                    <p>
+                                        {{this.description}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="modal-checkout">
+                                <form>
+                                    <input class="input-number-decrement" type="button" onclick="decrementValue('{{this.code}}box')" value="-"/>
+                                    <input class="input-number" type="text" value="1" id="{{this.code}}box">
+                                    <input class="input-number-increment" type="button" onclick="incrementValue('{{this.code}}box')" value='+'/>
+                                </form>
+                                <span class="modal-price"><h3>{{this.price}} VND</h3></span>
+                                <button class="addtocart-button" data-dismiss="modal" onclick="AddToCart('{{this.code}}')">
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <!---------------->
+                <h1>
+                    <span class="primary-color">Main Menu</span>
+                </h1>
+
+                <div class="food-category" style="padding-top: 2rem;"  id="modal-stop">
+                    <div class="zoom play-on-scroll">
+                        <button class="active" data-food-type="all">
+                            All food
+                        </button>
+                    </div>
+
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="hot">
+                            Hot-dishes
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-2">
+                        <button data-food-type="salad">
+                            Salad
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="pasta">
+                            Pasta
+                        </button>
+                    </div>
+
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="dessert">
+                            Dessert
+                        </button>
+                    </div>
+                    <div class="zoom play-on-scroll delay-8">
+                        <button data-food-type="drink">
+                            Drink
+                        </button>
+                    </div>
+                </div>
+
+                <div class="food-item-wrap all">
+                    <!-- FOOD GET -->
+                    {{#each foods}}
+                        <div class="food-item {{this.type}}-type">
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <a href="#{{this.code}}">
+                                    <div class="item-img" id="food1">
+                                        <div class="img-holder bg-img"
+                                            style="background-image: url({{this.image}});">
+                                            </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div>
+                                            <h3>
+                                                {{this.name}}
+                                            </h3>
+                                            <span>
+                                                {{this.id}}
+                                                {{this.price}} VND
+                                            </span>
+                                        </div>
+                                        <div class="cart-btn">
+                                            <i class="bx bx-cart-alt"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                    
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>

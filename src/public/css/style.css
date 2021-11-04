@@ -3,65 +3,311 @@
   --background-color: black;
   --secon-color: #9da2ad;
   --grey: #7a7a7b;
-  --white: #ffffff; }
+  --white: #ffffff;
+}
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 a {
   color: unset;
-  text-decoration: none; }
-  #home h1 {
-    font-family: 'Exo 2', sans-serif; }
-  
-  body,
-  html {
-    background-color: var(--background-color);
-    scroll-behavior: smooth;
-    position: relative;
-    overflow-x: hidden; }
-  
-  .intro {
-    color: white;
-    background-color: black;
-    border-radius: 10px;
-  }
-  
-  
-  .nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-    background-color: var(--background-color);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
-  
-  .menu-wrap {
-    max-width: 1366px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem; }
-  
-  .logo {
-    color: var(--primary-color); }
-  
-  .logo p {
-    font-size: 2rem;
-    font-weight: 800;
-    font-family: 'Exo 2', sans-serif;
-    display: inline-block;
-    vertical-align: middle; }
-  
-  .logo img {
-    padding-right: 0.5rem;
-    display: inline-block;
-    max-height: 4rem;
-    vertical-align: middle; }
+  text-decoration: none;
+}
+#home h1 {
+  font-family: "Exo 2", sans-serif;
+}
 
-    
+body,
+html {
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.intro {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--background-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu-wrap {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  color: var(--primary-color);
+}
+
+.logo p {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: "Exo 2", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.logo img {
+  padding-right: 0.5rem;
+  display: inline-block;
+  max-height: 4rem;
+  vertical-align: middle;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  margin-left: 1rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  color: var(--grey);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+}
+
+.cart-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.cart-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 1rem;
+}
+
+.fullheight {
+  height: 100vh;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bg-img {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-img-fixed {
+  background-attachment: fixed;
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 9rem 0;
+}
+
+.slogan {
+  text-align: left;
+}
+
+.slogan h1 {
+  font-size: 7rem;
+  color: var(--primary-color);
+}
+
+.slogan button {
+  padding: 1rem 5rem;
+  outline: none;
+  border: none;
+  background-color: white;
+  border: 0.125rem solid var(--primary-color);
+  border-radius: 2rem;
+  color: var(--primary-color);
+  margin: 3rem 0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+
+.slogan button:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+#about img {
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+#about2 img {
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.about-slogan {
+  padding: 4rem;
+  background-color: var(--white);
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.about-slogan.start {
+  transform: translateX(-10rem) !important;
+}
+
+.about-slogan h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--grey);
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
+
+/*Modal*/
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+}
+
+.modal-content {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+}
+
+.food-menu {
+  padding: 4rem;
+  color: var(--grey);
+  border-color: var(--grey);
+  background-color: black;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.food-menu h3 {
+  font-size: 2rem;
+}
+
+.food-menu h4 {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+}
+
+.food-menu p {
+  margin: 2rem 0;
+}
+
+.food-category {
+  justify-content: center;
+  display: flex;
+}
+
+.food-category button {
+  padding: 0.5rem 2.5rem;
+  margin: 0 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.food-category button:hover,
+.food-category button.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.food-item-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 3rem;
+}
+
+.food-item {
+  width: 25%;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.item-wrap {
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+
+.item-wrap:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.item-img {
+  height: 60%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2rem;
+}
+
+.img-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  border-radius: 2rem;
+}
