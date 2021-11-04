@@ -14,3 +14,52 @@
 a {
   color: unset;
   text-decoration: none; }
+  #home h1 {
+    font-family: 'Exo 2', sans-serif; }
+  
+  body,
+  html {
+    background-color: var(--background-color);
+    scroll-behavior: smooth;
+    position: relative;
+    overflow-x: hidden; }
+  
+  .intro {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: var(--background-color);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; }
+  
+  .menu-wrap {
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; }
+  
+  .logo {
+    color: var(--primary-color); }
+  
+  .logo p {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Exo 2', sans-serif;
+    display: inline-block;
+    vertical-align: middle; }
+  
+  .logo img {
+    padding-right: 0.5rem;
+    display: inline-block;
+    max-height: 4rem;
+    vertical-align: middle; }
