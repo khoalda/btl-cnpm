@@ -1,0 +1,46 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+    style="background-image: url(img/banner3.jpg);">
+    <div class="container">
+        <div class="food-menu">
+            <form id="cart" action="">
+            <table id="cartTable" class="table">
+                <thead>
+                    <tr>
+                        <th scope="col" class="cart-id">ID</th>
+                        <th scope="col" class="cart-name">Name</th>
+                        <th scope="col" class="cart-image">Image</th>
+                        <th scope="col" class="cart-price">Price</th>
+                        <th scope="col" class="cart-num">Number</th>
+                        <th scope="col" class="cart-total">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="cartTableBody">
+                    {{#each listItem}}
+                    <tr id="cart-item-{{@index}}">
+                        <th scope="row" id="idx">{{sum @index 1}}</th>
+                        <td id="name">{{this.name}}</td>
+                        <td id="cart-img"><img id="cart-img-holder" src="{{this.image}}" alt=""></td>
+                        <td id="price">{{this.price}}</td>
+                        <td id="number">
+                            <form class="changeValue">
+                                <div class="value-button" id="decrease" onclick="decreaseValue({{@index}})"
+                                    value="Decrease Value"><p>-</p></div>
+                                <input type="number" id="numberOfItem" value="{{this.number}}">
+                                <div class="value-button" id="increase" onclick="increaseValue({{@index}})"
+                                    value="Increase Value"><p>+</p></div>
+                            </form>
+                        </td>
+                        <td id="total"> {{this.totalPrice}} </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <br>
+            <h5>Total price:   </h5>
+            <h3 id="totalPrice">{{SumTotal}}</h3>
+            <br>
+            <button id="payButton" type="button" onclick="SendDataFromCart()" class="checkout-btn" ><h4>Checkout</h4></button>
+            </form>
+        </div>
+    </div>
+</section>

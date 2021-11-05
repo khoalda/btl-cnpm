@@ -1,0 +1,70 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(img/banner3.jpg);">
+    <div class="container">
+        <div class="food-menu">
+            <!--Modal Divs-->
+                <div id="modalDiv">
+                    {{#each food}}
+                        <div id="{{this.code}}" class="overlay">
+                        <div class="popup">
+                            <a class="close" href="#modal-stop">&times;</a>
+                            <div class="modal-img" id="{{this.code}}">
+                                <div class="modal-img-holder bg-img"
+                                    style="background-image: url({{this.image}});"></div>
+                            </div>
+                            <div class="modal-item-info">
+                                <div id="modal-info">
+                                    <h3>
+                                        {{this.name}}
+                                    </h3>
+                                    <p>
+                                        {{this.description}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <!---------------->
+            <h1 id"modal-stop">
+                <span class="primary-color">Main Menu</span>
+            </h1>
+            <div class="addItem">
+                <a href="/order/create" class="addItem-button">Add a new meal</a>
+            </div>
+                <div class="food-item-wrap all">
+                    <!-- FOOD GET -->
+                    {{#each food}}
+                        <div class="food-item {{this.type}}-type">
+                            <div class="item-wrap bottom-up play-on-scroll">
+                                <a href="#{{this.code}}">
+                                    <div class="item-img" id="food1">
+                                        <div class="img-holder bg-img"
+                                            style="background-image: url({{this.image}});">
+                                            </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div>
+                                            <h3>
+                                                {{this.name}}
+                                            </h3>
+                                            <span>
+                                                {{this.price}} VND
+                                            </span>
+                                        </div>
+                                        <div class="crud-func">
+                                            <a href="/order/{{this._id}}/update" class="update-button">Update</a> <br>
+                                            <form method="POST" action="/order/{{this._id}}/delete?_method=DELETE">
+                                                <input type="submit" class="delete-button"value="Delete">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                    
+                    {{/each}}
+                </div> 
+        </div>
+    </div>
+</section>
