@@ -34,8 +34,46 @@ class OrderController {
                 console.log(err);
                 res.status(500).json('Server Error');
             });
-
         }
+    }
+
+    create(req, res){
+        res.render('create')
+    }
+
+    update(req, res, next){
+        Food.findById(req.params.id)
+            .then(food => res.render('update', {
+                food: mongooseToObject(food)
+            }))
+            .catch(next)
+    }
+
+    delete(req, res, next){
+        Food.deleteOne({_id: req.params.id})
+            .then(() => res.redirect('/order'))
+            .catch(error => {
+
+            })
+    }
+
+    edit(req, res, next){
+        Food.updateOne({_id: req.params.id}, req.body)
+            .then(() => res.redirect('/order'))
+            .catch(error => {
+
+            })
+    }
+
+    store(req, res){
+        //res.json(req.body)
+        const formData = req.body
+        const newFood = new Food(formData)
+        newFood.save()
+            .then(() => res.redirect('/order'))
+            .catch(error => {
+
+            })
     }
 }
 

@@ -21,7 +21,7 @@ class SiteController {
     showabout(req, res) {
         res.render('about')
     }
-    
+
     showcontact(req, res) {
         res.render('contact')
     }
@@ -46,6 +46,49 @@ class SiteController {
                        
                     })
                 })
+    }
+
+    addToCart(req, res, next) {
+        var token = req.cookies.token;
+        var User = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+        var data = req.body;
+        var codeFood = data.code;
+        var num = data.number;
+        
+        cartModel.findOne({ phone: User.phone, })
+            .then(cart => {
+                console.log("start");
+                var consCart = cart.cart;
+                console.log(consCart);
+                let itemCode = Object.keys(cart.cart);
+                var exist = false;
+                for (let i = 0; i < itemCode.length; i++) {
+                    if (itemCode[i] == codeFood) {
+                        consCart[codeFood].number = num;
+                        exist = true;
+                    }
+                }
+                if (!exist) {
+                    consCart[codeFood] = {
+                        "number": num,
+                    }
+                }
+                return consCart;
+            })
+            .then(consCart => {
+                cartModel.deleteOne({ phone: User.phone })
+                    .then(() => {
+                        var newCart = {};
+                        newCart.phone = User.phone;
+                        newCart.cart = consCart;
+                        const SaveCart = new cartModel(newCart);
+                        SaveCart.save();
+
+                    });
+            })
+            .catch(err => {
+                console.log(err);
+            })
     }
 }
 
