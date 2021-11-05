@@ -1,0 +1,30 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+    style="background-image: url(img/banner3.jpg);">
+    <div class="container">
+        <div class="food-menu">
+            <h3>
+                <span class="primary-color">Register</span>
+            </h3>
+
+            <div class="crud-form">
+                <form method="POST" action="/register">
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput" class="form-label">Phone number:</label>
+                        <input type="text" class="form-control" name="inputPhone" placeholder="Input your phone number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Password:</label>
+                        <input type="password" class="form-control" name="inputPassword" placeholder="Input your password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="formGroupExampleInput2" class="form-label">Confirm password:</label>
+                        <input type="password" class="form-control" name="inputPassword2" placeholder="Confirm your password">
+                    </div>
+                    <button type="submit" id="register-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/js/auth.js"></script>
+
+</section>
