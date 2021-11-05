@@ -1,0 +1,73 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(img/banner3.jpg);">
+        <div class="container">
+            <div class="food-menu">
+                <h4>Order History</h4>
+                <!--Modal Divs-->
+                <div id="modalDiv">
+                    {{#each order}}
+                        <div id="{{this._id}}" class="overlay">
+                        <div class="popup">
+                            <a class="close" href="#modal-stop">&times;</a>
+                            <div class="modal-order-info">
+                                <div id="modal-order-item-info">
+                                    <h3>
+                                        ID: {{this._id}}
+                                    </h3>
+                                    <p> Date: {{this.date}} </p>
+                                    <table id="cartTable" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="cart-id">ID</th>
+                                                <th scope="col" class="cart-name">Name</th>
+                                                <th scope="col" class="cart-image">Image</th>
+                                                <th scope="col" class="cart-num">Number</th>
+                                                <th scope="col" class="cart-total">Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {{#each this.order}}
+                                            <tr id="cart-item-{{@index}}">
+                                                <th scope="row" id="idx">{{sum @index 1}}</th>
+                                                <td id="name">{{@key}}</td>
+                                                <td id="cart-img"><img id="cart-img-holder" src="{{this.image}}" alt=""></td>
+                                                <td id="number">{{this.number}}</td>
+                                                <td id="total"> {{this.total}} </td>
+                                            </tr>
+                                            {{/each}}
+                                        </tbody>
+                                    </table>
+                                    <h4> Total Price: {{this.total}}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+
+                {{!-- <div class="food-item-wrap all"> --}}
+                <div>
+                    <!-- FOOD GET -->
+                    {{#each order}}
+                            <div class="order-wrap bottom-up play-on-scroll">
+                                <a href="#{{this._id}}">
+                                    <div class="order-info">
+                                        <div>
+                                            <h3>
+                                                Order: {{this._id}}
+                                            </h3>
+                                            <span>
+                                                Date: {{this.date}}
+                                            </span>
+                                            <span>
+                                                 - Total: {{this.total}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </section>
