@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Seafood salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://images.foody.vn/res/g18/174145/s180x180/foody-hi-salad-restaurant-956-635840508925621737.jpg",
+    "code": "sa1"
+  },
+  {
+    "name": "Grilled squid salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://images.foody.vn/res/g18/174145/s180x180/foody-hi-salad-restaurant-269-635833560873649586.jpg",
+    "code": "sa2"
+  },
+  {
+    "name": "Grilled beef salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://images.foody.vn/res/g18/174145/s180x180/foody-hi-salad-restaurant-432-635982211332274223.jpg",
+    "code": "sa3"
+  },
+  {
+    "name": "Green Goddess Cobb Salad with Chicken",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Mediterranean-Cobb-Salad_exps71754_TH143192B02_05_6bC_RMS-2.jpg?w=1200",
+    "code": "sa4"
+  },
+  {
+    "name": "Chicken Salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://vinaigrettesaladkitchen.com/wp-content/uploads/2017/09/chickensalad.jpg",
+    "code": "sa5"
+  },
+  {
+    "name": "Chilly Santa Fe Chicken Salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Slow-Cooker-Chicken-Taco-Salad_EXPS_HCBZ21_175204_B10_13_1b-3.jpg?w=1200",
+    "code": "sa6"
+  },
+  {
+    "name": "Salad Applebee's Oriental",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Crunchy-Asian-Chicken-Salad_EXPS_SDAM17_192273_D12_02_9b-1.jpg?resize=1024,1024",
+    "code": "sa7"
+  },
+  {
+    "name": "Italian pasta Salad",
+    "type": "salad",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/singleimagebug-pasta-puttanesca-pin-1549421288.jpg?crop=1.00xw:0.930xh;0,0&resize=980:*",
+    "code": "sa8"
+  },
+  {
+    "name": "Aquafina",
+    "type": "drink",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 5000,
+    "image": "https://binhminhcompany.vn/hoanghung/5/images/Dai%20ly%20nuoc%20suoi%20aquafina.jpg",
+    "code": "dr1"
+  },
+  {
+    "name": "Mirinda orange",
+    "type": "drink",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 15,
+    "image": "https://cdn.tgdd.vn/Products/Images/2443/79138/bhx/mirinda-cam-pet-390ml-2-org.jpg",
+    "code": "dr2"
+  },
+  {
+    "name": "Sting",
+    "type": "drink",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 15,
+    "image": "https://cdn.tgdd.vn/Products/Images/3226/76520/bhx/nuoc-tang-luc-sting-huong-dau-330ml-201909031559004919.jpg",
+    "code": "dr3"
+  },
+  {
+    "name": "Mirinda orginal",
+    "type": "drink",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 15,
+    "image": "https://medicare.vn/wp-content/uploads/2021/07/0102358.jpg",
+    "code": "dr4"
+  },
+  {
+    "name": "7up",
+    "type": "drink",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 15,
+    "image": "https://cdn.tgdd.vn/Products/Images/2443/83599/bhx/nuoc-ngot-co-gas-7up-pet-15l-2-org.jpg",
+    "code": "dr5"
+  },
+  {
+    "name": "Match cake",
+    "type": "dessert",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://i0.wp.com/coupleeatsfood.com/wp-content/uploads/2017/05/Green-Tea-Cake-White-Chocolate-Buttercream.jpg?fit=3456%2C3460",
+    "code": "de2"
+  },
+  {
+    "name": "Tea and herbal tea ice cream",
+    "type": "dessert",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://balconygardenweb-lhnfx0beomqvnhspx.netdna-ssl.com/wp-content/uploads/2018/04/mint-ice-cream.jpg",
+    "code": "de3"
+  },
+  {
+    "name": "Chesse cake",
+    "type": "dessert",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://www.thoughtco.com/thmb/ZsW7-hQjMwtm_ixcRpKMWxqTdys=/3992x2245/smart/filters:no_upscale()/white-chocolate-cheesecake-with-brownie-base--135573460-5b6f756d4cedfd002529a0db.jpg",
+    "code": "de4"
+  },
+  {
+    "name": "Chocolate cake",
+    "type": "dessert",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://assets.bonappetit.com/photos/57afbf181b33404414975e84/master/w_1280%2Cc_limit/chocolate-hazelnut-cake-with-praline-chocolate-crunch.jpg",
+    "code": "de5"
+  },
+  {
+    "name": "Tiramisu",
+    "type": "dessert",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 50000,
+    "image": "https://cdn.huongnghiepaau.com/wp-content/uploads/2018/05/13bf3ee8d2a01727d45bdca32af9aa23.jpg",
+    "code": "de6"
+  },
+  {
+    "name": "Baked Italian meat ball",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/cm/15/10/54f659da9d627_-_turkey-meatballs-ufflhp-s2.jpg?crop=0.9027777777777778xw:1xh;center,top&resize=980:*",
+    "code": "pa1"
+  },
+  {
+    "name": "pasta Puttanesca",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/singleimagebug-pasta-puttanesca-pin-1549421288.jpg?crop=1.00xw:0.930xh;0,0&resize=980:*",
+    "code": "pa2"
+  },
+  {
+    "name": "Italian pasta Salad",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pasta-salad-vertical-jpg-1522172279.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "code": "pa3"
+  },
+  {
+    "name": "Creamy Tuscan Sausage pasta",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/18/640x959/gallery-1493851581-delish-pasta-sinatra-pinterest-2.jpg?resize=980:*",
+    "code": "pa4"
+  },
+  {
+    "name": "Chicken Florentine pasta",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/11/640x958/gallery-1489524543-delish-chicken-florentine-pasta-pinterest-2.jpg?resize=980:*",
+    "code": "pa5"
+  },
+  {
+    "name": "Spaghetti Lasagna",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 100000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/08/640x958/gallery-1487792926-delish-spaghetti-lasagna-pin-2.jpg?resize=980:*",
+    "code": "pa6"
+  },
+  {
+    "name": "Spaghetti and meatball",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 120000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456122-delish-spaghetti-meatballs-2.jpg?resize=980:*",
+    "code": "pa7"
+  },
+  {
+    "name": "Tomato Butter Spaghetti",
+    "type": "pasta",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 120000,
+    "image": "https://hips.hearstapps.com/del.h-cdn.co/assets/16/36/640x958/gallery-1473255976-delish-tomato-butter-spaghetti-pin-03.jpg?resize=980:*",
+    "code": "pa8"
+  },
+  {
+    "name": "Turkey Biscuit Stew",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/12/Butternut-Squash-Soup.webp",
+    "code": "hd1"
+  },
+  {
+    "name": "Butternut Squash Soup",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/b5/ed/17/b5ed175f0608f5d3504330a765dea7e9.jpg",
+    "code": "hd2"
+  },
+  {
+    "name": "Sausage and Vegetable Bake",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/07/beef-stew.webp",
+    "code": "hd3"
+  },
+  {
+    "name": "Beef Stew",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/15/f6/73/15f673950af903e54a0fbf321e651364.jpg",
+    "code": "hd4"
+  },
+  {
+    "name": "Ham and Potato Casserole",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/10/Homemade-French-Onion-Soup.webp",
+    "code": "hd5"
+  },
+  {
+    "name": "French Onion Soup",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/13/2e/1e/132e1ef46a5f7d7bc4ef34e1a202cd86.jpg",
+    "code": "hd6"
+  },
+  {
+    "name": "Beef Pot Pie",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Trisha-Yearwood-Chicken-Tortilla-Soup-Pin.webp",
+    "code": "hd7"
+  },
+  {
+    "name": "Garlic Toast Pizzas",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/72/8b/f0/728bf0f60732b502d81f5bbf261c18ae.jpg",
+    "code": "hd8"
+  },
+  {
+    "name": "Chicken Gnocchi Soup",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/8e/05/cf/8e05cf3c201d80934534f7a052a89d38.jpg",
+    "code": "hd9"
+  },
+  {
+    "name": "Fried Pork Chops with Apples",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://i.pinimg.com/564x/8e/05/cf/8e05cf3c201d80934534f7a052a89d38.jpg",
+    "code": "hd10"
+  },
+  {
+    "name": "Roasted Leg of Lamb",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2019/10/Pumpkin-Soup-Bowl.webp",
+    "code": "hd11"
+  },
+  {
+    "name": "Lentil Dal",
+    "type": "hot",
+    "description": "Lorem ipsum dolosit amet",
+    "price": 150000,
+    "image": "https://insanelygoodrecipes.com/wp-content/uploads/2020/12/Homemade-Cheeseburger-Meatloaf.webp",
+    "code": "hd12"
+  }
+]
