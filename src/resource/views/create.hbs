@@ -1,0 +1,41 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(img/banner3.jpg);">
+    <div class="container">
+        <div class="food-menu">
+            <h3>
+                <span class="primary-color">Add an Item</span>
+            </h3>
+            <div class="crud-form">
+                <form method="POST" action="/order/store">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="form-label">Type</label>
+                        <input type="text" class="form-control" id="type" name="type">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description" name="description">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="text" class="form-control" id="price" name="price">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Image URL</label>
+                        <input type="text" class="form-control" id="image" name="image">
+                    </div>
+                    <div class="mb-3">
+                        <label for="code" class="form-label">Code</label>
+                        <input type="text" class="form-control" id="code" name="code">
+                    </div>
+                    
+                    <input type="submit" value="Submit" id="submit-button">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
