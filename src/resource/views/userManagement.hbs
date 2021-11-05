@@ -1,0 +1,20 @@
+<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(img/banner3.jpg);">
+    <div class="container">
+        <div class="food-menu">
+            <h3 id"modal-stop">
+                <span class="primary-color">User Management</span>
+            </h3>
+                {{#each user}}
+                    <div class="user-mgmt-wrap bottom-up play-on-scroll">
+                        <div class="user-mgmt-info">
+                            <form method="POST" action="/user/{{this._id}}/delete?_method=DELETE">
+                                <label for="phone">Phone Number:   {{this.phone}}</label>
+                                <input type="submit" name="phone" class="delete-button"value="Delete">
+                            </form>
+                        </div>
+                    </div>
+                {{/each}}
+        </div>
+    </div>
+</section>
