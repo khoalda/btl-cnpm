@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const siteController = require('../app/controllers/SiteCotroller')
+const siteController = require('../app/controllers/SiteController')
 const authController = require('../app/middlewares/auth');
 
 router.get('/history', siteController.history)

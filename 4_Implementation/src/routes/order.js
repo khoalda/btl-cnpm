@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-const orderController = require('../app/controllers/OrderCotroller')
+const orderController = require('../app/controllers/OrderController')
 
 router.get('/create', orderController.create)
 router.get('/:id/update', orderController.update)

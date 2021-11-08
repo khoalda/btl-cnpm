@@ -1,27 +1,17 @@
-<section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+<section class="align-items-center bg-img bg-img-fixed" id="user-section"
         style="background-image: url(img/banner3.jpg);">
-    <div class="container">
-        <div class="food-menu">
-            <h3>
-                <span class="primary-color">Login</span>
-            </h3>
-            <div class="crud-form">
-                <form method="POST" action="/login">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Phone Number</label>
-                        <input type="text" id ="phone" name="phone" value="" placeholder="Phone number">
-                    </div>
-                    <div class="mb-3">
-                        <label for="type" class="form-label">Password</label>
-                        <input type="password" name="password" value="" placeholder="Password">
-                    </div>
-                    <span>If you haven't had account yet, <a href="/register" id="signupAdd">SIGN UP.</a></span>
-                    <input type="submit" id="login-button" name="commit" value="Login">
-                </form>
-                <div class="login-help">
-                  <p>Forgot your password? <a href="#" id="resetAdd">Click here to reset it</a>.</p>
+        <div class="container">
+            <div class="account">
+                <h1>Hello Admin</h1>
+                <a href="/order"><div class="user-func-container">
+                    <p>Food Management</p>
+                </div></a>
+                <a href="/user"><div class="user-func-container">
+                    <p>User Management</p>
+                </div></a>
+                <div class="user-func-container3">
+                    <button id= "logoutBtn" type="submit" class="user-btn"><p>Log Out</p></button>
                 </div>
             </div>
         </div>
-    </div>
-</section>    
+</section>
