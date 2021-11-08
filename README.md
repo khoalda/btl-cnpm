@@ -14,7 +14,7 @@ SVTH:
 **Nguyễn Kim Lộc – 1911530**
 
 **Lê Quang Vinh – 1915931**  
-<br/><br/>
+
 # Table of Content
 
 **Task 1. Requirement elicitation**
